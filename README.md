@@ -1,4 +1,16 @@
 # IndiaTrader — Indian Paper Trading Platform
+
+# AI-Powered Indian Trading Simulator
+
+A full-stack paper trading and derivatives simulation platform for Indian markets featuring:
+
+- NSE/BSE live market data
+- Options and futures simulation
+- AI sentiment analysis
+- Strategy backtesting
+- Portfolio analytics
+- Risk management engine
+
 # Full-stack setup guide
 
 ---
@@ -294,25 +306,6 @@ pyotp==2.9.0
 
 ---
 
-## Resume Talking Points
+## Disclaimer
+Educational purposes only.
 
-When presenting this project in interviews, highlight:
-
-1. **Real-time data pipeline** — WebSocket tick streaming via Redis pub/sub,
-   TimescaleDB hypertable partitioning for time-series at scale.
-
-2. **Options pricing from scratch** — Black-Scholes implementation with
-   Newton-Raphson / Brent IV solver, full Greeks (Delta, Gamma, Theta, Vega, Rho).
-
-3. **NLP pipeline** — FinBERT fine-tuned on financial text, aggregated
-   across Reddit + news RSS with engagement-weighted sentiment scoring.
-
-4. **AI agent architecture** — Claude used as a reasoning layer over
-   structured technical + sentiment data (RAG-style context injection).
-
-5. **Strategy framework** — Vectorized backtester with Sharpe, Sortino,
-   drawdown metrics; no-code rule engine that compiles JSON → signal functions.
-
-6. **System design** — Async FastAPI + Celery workers + Redis pub/sub;
-   designed for horizontal scaling (each service independently deployable).
-```
